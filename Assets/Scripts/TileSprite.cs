@@ -15,6 +15,8 @@ public class TileSprite : MonoBehaviour
     Rect _actualRect = new Rect();
     Rect _cameraRect = new Rect();
 
+    Vector3[] _initialPos;
+
     // Add more tiles
     // TODO: Make generic por N tiles
     void Start() {
@@ -27,6 +29,12 @@ public class TileSprite : MonoBehaviour
 
         _actualIndex = 0;
         UpdateRect();
+
+        //Save Initial Pos (in case of reset)
+        _initialPos = new Vector3[_objects.Count];
+        for (int i = 0; i < _objects.Count; i++) {
+            _initialPos[i] = _objects[i].transform.position;
+        }
 
         //Camera Rect
         var cam = Camera.main;
@@ -68,5 +76,14 @@ public class TileSprite : MonoBehaviour
         //        _cameraRect.Contains(topRight) ||
         //        _cameraRect.Contains(bottomLeft) ||
         //        _cameraRect.Contains(bottomRight));
+    }
+
+    public void ResetPos() {
+        for (int i = 0; i < _objects.Count; i++) {
+            _objects[i].transform.position = _initialPos[i];
+        }
+
+        _actualIndex = 0;
+        UpdateRect();
     }
 }

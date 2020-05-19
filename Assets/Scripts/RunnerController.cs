@@ -13,9 +13,11 @@ public class RunnerController : MonoBehaviour
     public float groundCheckDistance = 0.1f;
 
     Rigidbody2D _rb;
+    Vector2 _initialPos;
 
     void Start() {
         _rb = GetComponent<Rigidbody2D>();
+        _initialPos = transform.position;
     }
 
     void FixedUpdate() {
@@ -27,6 +29,10 @@ public class RunnerController : MonoBehaviour
             _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             Debug.Log("Jumping", gameObject);
         }
+    }
+
+    public void ResetPos() {
+        transform.position = _initialPos;
     }
 
     bool IsGrounded() {

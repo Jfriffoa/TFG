@@ -16,7 +16,17 @@ public class ObstacleSpawner : MonoBehaviour
 
     void Start() {
         _cam = Camera.main;
+        Invoke("StartSpawn", 1f);
+    }
+
+    void StartSpawn() {
         StartCoroutine(Spawn());
+    }
+
+    public void Clean() {
+        for (int i = transform.childCount - 1; i >= 0; i--) {
+            Destroy(transform.GetChild(i).gameObject);
+        }
     }
 
     IEnumerator Spawn() {

@@ -5,16 +5,10 @@ using UnityEngine;
 public class FollowObject : MonoBehaviour
 {
     public Transform toFollow;
-
-    Vector3 _lastKnownPosition;
-    void Start() {
-        _lastKnownPosition = toFollow.position;
-    }
+    public Vector3 offset;
 
     void LateUpdate()
     {
-        var deltaPos = toFollow.position - _lastKnownPosition;
-        transform.position += deltaPos;
-        _lastKnownPosition = toFollow.position;
+        transform.position = toFollow.position + offset;
     }
 }
