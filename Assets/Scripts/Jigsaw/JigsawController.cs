@@ -18,9 +18,11 @@ namespace TFG.Jigsaw {
 
         // Start is called before the first frame update
         void Start() {
-            _piecesDone = 0;
-            
+            //Prepare Board
+            board.BroadcastMessage("SetController", this);
+
             //Prepare Pieces
+            _piecesDone = 0;
             pieces.BroadcastMessage("SetIndex");
             pieces.BroadcastMessage("SetClickSize", board.GetComponent<GridLayoutGroup>().cellSize);
 
