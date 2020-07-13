@@ -1,0 +1,17 @@
+[]:Este es un dialogo
+[]:Este es otro dialogo
+[]:Este es otro dialogo más
+[P0]:Este es un dialogo con atributos
+[P1]:Este es un dialogo de p1
+[P2]:Este es un dialogo de p2
+[P3]:Vamos a aprender a contar
+[P1]:1
+[P2]:2
+[P1]:3
+[P2]:4
+[P1]:5
+[P2]:6
+[P1]:7
+[P2]:8
+[P1]:9
+[P3]:10!
