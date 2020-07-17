@@ -5,34 +5,49 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
+using TMPro;
+
 namespace TFG.Dialog {
     public class DialogueManager : MonoBehaviour {
+        [Header("Source file")]
         public TextAsset rawFile;
+
+        [Header("UI")]
+        public bool useTMP;
         public Text text;
+        public TextMeshProUGUI tmp;
 
         public GameObject P1;
         public GameObject P2;
-
-        List<Dialog> _dialogs;
-        int _dialogIndex = 0;
 
         [Header("Callbacks")]
         public UnityEvent onStart;
         public UnityEvent onNextDialog;
         public UnityEvent onFinish;
+
+        // Dialogue private variables
+        List<Dialog> _dialogs;
+        int _dialogIndex = 0;
         
         // Start is called before the first frame update
         IEnumerator Start() {
-            P1.SetActive(false);
-            P2.SetActive(false);
+            if (P1 != null) P1.SetActive(false);
+            if (P2 != null) P2.SetActive(false);
 
             _dialogs = Parser.LoadFileFromString(rawFile.text);
             yield return null;
             OnLoad();
         }
 
+        void SetText(string newText) {
+            if (useTMP)
+                tmp.text = newText;
+            else
+                text.text = newText;
+        }
+
         void OnLoad() {
-            text.text = _dialogs[_dialogIndex].Text;
+            SetText(_dialogs[_dialogIndex].Text);
             onStart.Invoke();
             UpdateAttributes();
         }
@@ -43,13 +58,16 @@ namespace TFG.Dialog {
                 Debug.Log("Dialog reached to an end.");
                 onFinish.Invoke();
             } else {
-                text.text = _dialogs[_dialogIndex].Text;
+                SetText(_dialogs[_dialogIndex].Text);
                 UpdateAttributes();
                 onNextDialog.Invoke();
             }
         }
 
         void UpdateAttributes() {
+            if (P1 == null || P2 == null)
+                return;
+
             switch (_dialogs[_dialogIndex].Attribute) {
                 case Dialog.DialogAttribute.P1:
                     P1.SetActive(true);

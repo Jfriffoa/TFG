@@ -34,7 +34,7 @@ namespace TFG.Jigsaw {
             }
 
             //Let the layout group prepare the childs before ignoring them
-            Invoke("ChildIgnoreLayout", 0.01f);
+            Invoke("ChildIgnoreLayout", 0.5f);
         }
 
         void ChildIgnoreLayout() {

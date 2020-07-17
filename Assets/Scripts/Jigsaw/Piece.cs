@@ -25,7 +25,7 @@ namespace TFG.Jigsaw {
             _transform = GetComponent<RectTransform>();
             _layout = GetComponent<LayoutElement>();
             _raycast = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<GraphicRaycaster>();
-            Invoke("GetSize", 0.01f);
+            Invoke("GetSize", 0.51f);
         }
 
         void GetSize() {
