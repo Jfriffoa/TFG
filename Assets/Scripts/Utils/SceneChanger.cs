@@ -25,6 +25,10 @@ namespace TFG {
             LoadScene(_sceneIndex);
         }
 
+        public void LoadSceneAdditive() {
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        }
+
         public void SetSceneIndex(int i) {
             _sceneIndex = i;
         }

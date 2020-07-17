@@ -1045,7 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplesScenes: 0
-  sceneName: 0.0-MainMenu
+  sceneName: 1.2-Runner
   scenes: []
 --- !u!1 &1527682372
 GameObject:
