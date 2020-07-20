@@ -21,8 +21,8 @@ namespace TFG.Dialog {
         public Text text;
         public TextMeshProUGUI tmp;
 
-        public GameObject P1;
-        public GameObject P2;
+        public Portait P1;
+        public Portait P2;
 
         [Header("Callbacks")]
         public UnityEvent onLoad;
@@ -36,9 +36,6 @@ namespace TFG.Dialog {
         
         // Start is called before the first frame update
         void Start() {
-            if (P1 != null) P1.SetActive(false);
-            if (P2 != null) P2.SetActive(false);
-
             if (loadOnStart)
                 Load();
         }
@@ -84,26 +81,19 @@ namespace TFG.Dialog {
         }
 
         void UpdateAttributes() {
-            if (P1 == null || P2 == null)
-                return;
+            var dialog = _dialogs[_dialogIndex];
 
-            switch (_dialogs[_dialogIndex].Attribute) {
-                case Dialog.DialogAttribute.P1:
-                    P1.SetActive(true);
-                    P2.SetActive(false);
-                    break;
-                case Dialog.DialogAttribute.P2:
-                    P1.SetActive(false);
-                    P2.SetActive(true);
-                    break;
-                case Dialog.DialogAttribute.None:
-                    P1.SetActive(false);
-                    P2.SetActive(false);
-                    break;
-                case Dialog.DialogAttribute.Both:
-                    P1.SetActive(true);
-                    P2.SetActive(true);
-                    break;
+            // TODO: Any general attribute to manage
+            switch (dialog.GeneralAttributes) {
+                default: break;
+            }
+
+            if (P1 != null) {
+                P1.ApplyAttributes(dialog.P1Attributes);
+            }
+
+            if (P2 != null) {
+                P2.ApplyAttributes(dialog.P2Attributes);
             }
         }
     }

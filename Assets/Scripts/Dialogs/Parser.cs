@@ -6,20 +6,22 @@ using System.IO;
 
 namespace TFG.Dialog {
     public class Dialog {
-        public enum DialogAttribute {
-            None, P1, P2, Both
-        }
-
-        DialogAttribute _attribute;
         string _text;
+        string[] _generalAttributes;
+        string[] _p1Attributes;
+        string[] _p2Attributes;
 
-        public Dialog(DialogAttribute attribute, string text) {
-            _attribute = attribute;
+        public Dialog(string text, string[] generalAttributes, string[] p1Attributes, string[] p2Attributes) {
             _text = text;
+            _generalAttributes = generalAttributes;
+            _p1Attributes = p1Attributes;
+            _p2Attributes = p2Attributes;
         }
 
-        public DialogAttribute Attribute { get => _attribute; }
-        public string          Text      { get => _text; }
+        public string   Text              { get => _text; }
+        public string[] P1Attributes      { get => _p1Attributes; }
+        public string[] P2Attributes      { get => _p2Attributes; }
+        public string[] GeneralAttributes { get => _generalAttributes; }
     }
 
     public class Parser {
@@ -62,25 +64,37 @@ namespace TFG.Dialog {
         static Dialog ParseLine(string line) {
             int idx = line.IndexOf(":");
 
-            var attr = ParseAttributes(line.Substring(0, idx));
+            var (attr, p1, p2) = ParseAttributes(line.Substring(0, idx));
             var txt = line.Substring(idx + 1);
 
-            return new Dialog(attr, txt);
+            return new Dialog(txt, attr, p1, p2);
         }
 
-        static Dialog.DialogAttribute ParseAttributes(string attributes) {
+        static (string[], string[], string[]) ParseAttributes(string attributes) {
             char[] trimChars = { '[', ']' };
             string key = attributes.Trim(trimChars);
 
-            var attr = Dialog.DialogAttribute.None;
+            var allAttr = new List<string>(attributes.Split('|'));
+            string[] p1 = new string[1];
+            string[] p2 = new string[1];
 
-            switch (key) {
-                case "P1": attr = Dialog.DialogAttribute.P1; break;
-                case "P2": attr = Dialog.DialogAttribute.P2; break;
-                case "P3": attr = Dialog.DialogAttribute.Both; break;
+            for (int i = allAttr.Count - 1; i >= 0; i--) {
+                var attr = allAttr[i];
+                if (!attr.StartsWith("P"))
+                    continue;
+
+                var startIdx = attr.IndexOf('(');
+                var endIdx = attr.LastIndexOf(')');
+                var tempAttr = attr.Substring(startIdx + 1, endIdx - startIdx);
+                var pAttr = tempAttr.Split(',');
+
+                if (attr.StartsWith("P1"))
+                    p1 = pAttr;
+                else
+                    p2 = pAttr;
             }
 
-            return attr;
+            return (allAttr.ToArray(), p1, p2);
         }
     }
 }

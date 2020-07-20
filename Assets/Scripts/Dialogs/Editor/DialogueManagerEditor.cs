@@ -8,6 +8,8 @@ namespace TFG.Dialog.Editor {
 
         // DialogueManager Properties
         SerializedProperty _file;
+        SerializedProperty _load;
+        SerializedProperty _begin;
         SerializedProperty _useTmp;
         SerializedProperty _uiText;
         SerializedProperty _tmp;
@@ -19,6 +21,8 @@ namespace TFG.Dialog.Editor {
 
         void OnEnable() {
             _file = serializedObject.FindProperty("rawFile");
+            _load = serializedObject.FindProperty("loadOnStart");
+            _begin = serializedObject.FindProperty("beginOnLoad");
             _useTmp = serializedObject.FindProperty("useTMP");
             _uiText = serializedObject.FindProperty("text");
             _tmp = serializedObject.FindProperty("tmp");
@@ -32,6 +36,8 @@ namespace TFG.Dialog.Editor {
         public override void OnInspectorGUI() {
             serializedObject.Update();
             EditorGUILayout.PropertyField(_file);
+            EditorGUILayout.PropertyField(_load);
+            EditorGUILayout.PropertyField(_begin);
             EditorGUILayout.PropertyField(_useTmp);
 
             if (_useTmp.boolValue) {

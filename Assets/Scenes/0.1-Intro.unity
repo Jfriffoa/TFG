@@ -271,7 +271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Muy bien, la historia comienza as\xED..."
+  m_text: "La historia as\xED comienza..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YES
+  m_text: La detienes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
@@ -626,10 +626,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 296600435}
-    characterCount: 3
+    characterCount: 11
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -793,11 +793,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rawFile: {fileID: 4900000, guid: 9468b0eccff83f64e8dd390c7506bcb9, type: 3}
+  loadOnStart: 1
+  beginOnLoad: 1
   useTMP: 1
   text: {fileID: 0}
   tmp: {fileID: 1856795690}
   P1: {fileID: 0}
   P2: {fileID: 0}
+  onLoad:
+    m_PersistentCalls:
+      m_Calls: []
   onStart:
     m_PersistentCalls:
       m_Calls: []
@@ -879,7 +884,7 @@ GameObject:
   - component: {fileID: 886420112}
   - component: {fileID: 886420111}
   m_Layer: 5
-  m_Name: No
+  m_Name: Morir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1248,7 +1253,7 @@ GameObject:
   - component: {fileID: 1223021577}
   - component: {fileID: 1223021576}
   m_Layer: 5
-  m_Name: Yes
+  m_Name: Vivir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1748,7 +1753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NO
+  m_text: La dejas avanzar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
@@ -1817,10 +1822,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1511184967}
-    characterCount: 2
+    characterCount: 12
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -1904,7 +1909,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xBFQu\xE9 har\xE1s?"
+  m_text: "\xBFQu\xE9 haces?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 3e05197b95cd9594d9ceeac4c0ca761e, type: 2}
