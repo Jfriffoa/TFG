@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
@@ -11,6 +11,10 @@ namespace TFG.Dialog {
     public class DialogueManager : MonoBehaviour {
         [Header("Source file")]
         public TextAsset rawFile;
+        
+        [Header("Load Options")]
+        public bool loadOnStart = true;
+        public bool beginOnLoad;
 
         [Header("UI")]
         public bool useTMP;
@@ -21,6 +25,7 @@ namespace TFG.Dialog {
         public GameObject P2;
 
         [Header("Callbacks")]
+        public UnityEvent onLoad;
         public UnityEvent onStart;
         public UnityEvent onNextDialog;
         public UnityEvent onFinish;
@@ -30,13 +35,26 @@ namespace TFG.Dialog {
         int _dialogIndex = 0;
         
         // Start is called before the first frame update
-        IEnumerator Start() {
+        void Start() {
             if (P1 != null) P1.SetActive(false);
             if (P2 != null) P2.SetActive(false);
 
+            if (loadOnStart)
+                Load();
+        }
+        
+        public void Load() {
+            StartCoroutine(LoadFile());
+        }
+        
+        IEnumerator LoadFile() {
             _dialogs = Parser.LoadFileFromString(rawFile.text);
+            
             yield return null;
-            OnLoad();
+            
+            onLoad.Invoke();
+            if (beginOnLoad)
+                Begin();
         }
 
         void SetText(string newText) {
@@ -45,8 +63,9 @@ namespace TFG.Dialog {
             else
                 text.text = newText;
         }
-
-        void OnLoad() {
+        
+        public void Begin() {
+            _dialogIndex = 0;
             SetText(_dialogs[_dialogIndex].Text);
             onStart.Invoke();
             UpdateAttributes();
