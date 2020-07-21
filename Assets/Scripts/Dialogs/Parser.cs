@@ -36,7 +36,8 @@ namespace TFG.Dialog {
             using (var reader = new StreamReader(path)) {
                 while (!reader.EndOfStream) {
                     var line = reader.ReadLine().Trim();
-                    dialogs.Add(ParseLine(line));
+                    if (!string.IsNullOrEmpty(line) && !line.StartsWith("//"))
+                        dialogs.Add(ParseLine(line));
                 }
             }
 

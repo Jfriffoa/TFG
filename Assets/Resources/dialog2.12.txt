@@ -1,0 +1,13 @@
+//Fondo = Habitación Lucia
+//P1 = Lucia
+//P2 = Muerte
+
+[P1(enter,on)]:¿Mi habitación?
+[P1(off)|P2(enter,on)]:Veo que si la recuerdas
+[P1(on)|P2(off)]:¿Qué hacemos aquí?
+[P1(off)|P2(on)]:Mira ahí
+[P1(exit)|P2(exit)]:Se ven unas piezas que brillan en el suelo
+[P1(enter,on)|P2(enter,off)]:¿Y eso?
+[P1(off)|P2(on)]:Son las respuestas que buscas, adelante, ve.
+
+// Después de esto viene el minijuego de puzzles

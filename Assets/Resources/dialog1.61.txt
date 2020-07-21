@@ -1,0 +1,16 @@
+//Fondo = Lineas del tren
+//P1 = Lucia
+[]:El tren pasa a toda velocidad.
+[]:...
+
+[]:Lucía se encuentra detenida al borde de la linea del tren.
+[]:Solo un paso más... Pero no lo dio.
+[P1(enter,on)]:No debe ser así...
+[P1(off)]:Una revelación le llega en el último segundo.
+[P1(on)]:No tiene porque ser así...
+[]:No es necesario que me quede aquí
+
+[P1(exit)]:Lucía mira hacia el horizonte, siguiendo el camino de la linea del tren...9
+[]:No le queda nada en esta tierra, no tiene nada que le ate, ni le debe nada a nadie.
+[]:Con el sol a sus espaldas, comienza a caminar por las vías...
+[]:Rumbo a una nueva vida.

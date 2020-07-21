@@ -1,0 +1,27 @@
+//Fondo = Vias del tren con fondo gris
+//P1 = Lucia
+//P2 = Muerte
+[]:...
+[P1(enter,on)]:¿D-Donde estoy?
+[]:¿Qué pasó aquí?
+[P1(off)]:Se abre un portal a unos metros de Lucía
+[P1(on)]:¿Qué es eso?
+[P1(off)|P2(enter,on)]:Oh, veo que ya despertaste
+[P1(on)|P2(off)]:¿Quien eres tu?
+[P1(off)|P2(on)]:Tengo varios nombres...
+[]:Algunos me llaman Shinigami
+[]:Otros Katrina
+[]:Otros la Parka.
+[]:Para ti puedo ser, “La Muerte”
+[P1(on)|P2(off)]:¿Estoy muerta? ¿Cómo? ¿Por qué?
+[P1(off)|P2(on)]:Tranquila, es normal que no lo recuerdes.
+[]:Tu muerte no fue natural
+[P1(on)|P2(off)]:¿No natural? ¿Para qué estás aquí?
+[P1(off)|P2(on)]:Tu vida ha terminado antes de tiempo, dejando tu alma inquieta y sin poder encontrar el camino al descanso eterno.
+[P1(off)|P2(on)]:Yo estoy aquí para ayudarte a encontrar esa paz.
+[P1(on)|P2(off)]:Me cuesta entenderlo aún…
+[P1(exit)|P2(exit)]:La muerte hace uso de sus poderes y abre otro portal junto a Lucía.
+[P2(enter,on)]:Ya lo entenderás a su tiempo, ahora ven, acompañame.
+[P2(exit)]:La muerte cruza el portal
+[P1(enter)]:Lucía duda por unos segundos, pero decide cruzar el portal.
+[P1(exit)]:El portal se cierra detrás de ellos.

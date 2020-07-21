@@ -1,0 +1,8 @@
+//Fondo = Habitación
+//P1 = Lucia
+//P2 = Reloj
+[]:Un reloj suena
+[P1(enter,on)]:...
+[P1(off)|P2(enter,on)]:Ring Ring!
+[P1(on)|P2(off)]:AAAAAAAARG
+[P1(exit)|P2(exit)]:Lucía apaga la alarma y se va rápidamente de la casa

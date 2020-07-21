@@ -1,0 +1,12 @@
+//Fondo = Habitación de Lucía
+//P1 = Lucia
+//P2 = Muerte
+
+[P1(enter,on)]:No lo entiendo.
+[P1(off)|P2(enter,on)]:Creí que estos recuerdos responderian tus dudas.
+[P1(on)|P2(off)]:Si lo hacen, pero no entiendo el último de ellos. ¿Me veia feliz?
+[P1(off)|P2(on)]:La vida no es solo blanco y negro.
+[]:Para ayudarte a encontrar la paz debo mostrarte todos sus matices.
+[P1(exit)|P2(exit)]:Se abre un nuevo portal
+[P2(enter,on)]:Ven, quiero que veas algo más.
+[P2(exit)]:Entran ambos al portal y éste se cierra detrás de ellos.

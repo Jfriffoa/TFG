@@ -1,0 +1,6 @@
+//Fondo = Sala de clases
+//P2 = Profesor
+//P1 = Lucia
+[P2(enter,on)]:Muy bien alumnos, aquí están los exámenes. Tienen 2.30 hrs para responder
+[]:Empiecen!
+[P1(enter,on)|P2(off)]:Aquí vamos

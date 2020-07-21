@@ -1,3 +1,4 @@
+// Comentario
 []:Este es un dialogo
 []:Este es otro dialogo
 []:Este es otro dialogo más

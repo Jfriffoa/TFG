@@ -1,0 +1,14 @@
+//Fondo = Lineas del tren, en la tarde
+//P1 = Lucia
+//P2 = Viento
+[P1(enter,on)]:AAAAARG
+[P1(off)|P2(enter,on)]:*Shuuuuush*
+[P1(on)|P2(off)]:Estupido exámen…
+[]:No se para que lo sigo intentando
+[]:Si esto no es para mi
+[P1(off)|P2(on)]:*Shuuuuush*
+[P1(on)|P2(off)]:Bueno, al menos mi padre es feliz con que estudie esto.
+[]:Sólo son un par de semestres más y todo acabará…
+[P1(off)|P2(on)]:*Shuuuuush*
+[P1(on)|P2(off)]:*Suspira* Sólo un poco más...
+[P1(exit)|P2(exit)]:Lucía se levanta y regresa a casa.

@@ -1,0 +1,18 @@
+//Fondo = Lineas del tren, presente, filtro gris
+//P1 = Lucia
+//P2 = Muerte
+
+// TODO: Cambiar los *rie* por emociones en los retratos
+
+[P2(enter,on)]:¿Te encuentras lista?
+[P1(enter,on)|P2(off)]:Creo que si, haces un muy buen trabajo al brindarle paz a la gente *rie*
+[P1(off)|P2(on)]:Cuando llevas trabajando más de 3000 años, tiendes a volverte bastante buena. *rie de vuelta*
+[P1(on)|P2(off)]:¿Quien lo diría? La muerte tiene sentido del humor.
+[P1(off)|P2(on)]:Y humor no es lo único que tengo...
+[]:¿Sabes? No suelo hacer esto, pero te tengo una propuesta.
+[P1(on)|P2(off)]:¿Una propuesta?
+[P1(off)|P2(on)]:Si, te ofrezco una segunda oportunidad.
+[]:Puedes volver a la vida con tu memoria intacta, manteniendo todo lo que has aprendido conmigo.
+[]:O puedes irte conmigo y encontrar el descanso eterno.
+
+// Después de esto viene la decisión
