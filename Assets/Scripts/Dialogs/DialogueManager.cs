@@ -21,8 +21,8 @@ namespace TFG.Dialog {
         public Text text;
         public TextMeshProUGUI tmp;
 
-        public Portait P1;
-        public Portait P2;
+        public Portrait P1;
+        public Portrait P2;
 
         [Header("Callbacks")]
         public UnityEvent onLoad;
@@ -89,11 +89,11 @@ namespace TFG.Dialog {
             }
 
             if (P1 != null) {
-                P1.ApplyAttributes(dialog.P1Attributes);
+                P1.ApplyAttributes(dialog.P1Attributes, dialog.Line);
             }
 
             if (P2 != null) {
-                P2.ApplyAttributes(dialog.P2Attributes);
+                P2.ApplyAttributes(dialog.P2Attributes, dialog.Line);
             }
         }
     }

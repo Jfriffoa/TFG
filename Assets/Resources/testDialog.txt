@@ -1,0 +1,13 @@
+// Comentario
+[]:Este es un dialogo vacio
+[P1(enter)]:Este es un dialogo donde P1 entra
+[P1(off)]:P1 en background
+[P1(on)]:P1 en focus
+[P1(img2)]:P1 cambia a img2
+[P1(exit)]:Y P1 se va
+[P2(enter,on)]:Ahora tenemos a P2 entrando
+[P1(enter,off)|P2(off)]:P1 entrando de fondo mientras P2 se va al fondo
+[P1(on)]:P1 teniendo el foco
+[]:La conversación se mantiene igual
+[P1(off)|P2(on)]:Ahora habla P2
+[P1(exit)|P2(exit)]:Y ambos se van

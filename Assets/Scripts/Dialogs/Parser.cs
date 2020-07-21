@@ -6,18 +6,21 @@ using System.IO;
 
 namespace TFG.Dialog {
     public class Dialog {
+        int _line;                      // Error handling purpuses
         string _text;
         string[] _generalAttributes;
         string[] _p1Attributes;
         string[] _p2Attributes;
 
-        public Dialog(string text, string[] generalAttributes, string[] p1Attributes, string[] p2Attributes) {
+        public Dialog(string text, string[] generalAttributes, string[] p1Attributes, string[] p2Attributes, int line) {
             _text = text;
             _generalAttributes = generalAttributes;
             _p1Attributes = p1Attributes;
             _p2Attributes = p2Attributes;
+            _line = line;
         }
 
+        public int      Line              { get => _line; }
         public string   Text              { get => _text; }
         public string[] P1Attributes      { get => _p1Attributes; }
         public string[] P2Attributes      { get => _p2Attributes; }
@@ -34,10 +37,12 @@ namespace TFG.Dialog {
             }
 
             using (var reader = new StreamReader(path)) {
+                int lineIdx = 0;
                 while (!reader.EndOfStream) {
                     var line = reader.ReadLine().Trim();
+                    lineIdx++;
                     if (!string.IsNullOrEmpty(line) && !line.StartsWith("//"))
-                        dialogs.Add(ParseLine(line));
+                        dialogs.Add(ParseLine(line, lineIdx));
                 }
             }
 
@@ -53,31 +58,34 @@ namespace TFG.Dialog {
             }
 
             using (var reader = new StringReader(txt)) {
+                int lineIdx = 0;
                 string line;
                 while ((line = reader.ReadLine()) != null) {
-                    dialogs.Add(ParseLine(line));
+                    lineIdx++;
+                    if (!string.IsNullOrEmpty(line) && !line.StartsWith("//"))
+                        dialogs.Add(ParseLine(line, lineIdx));
                 }
             }
 
             return dialogs;
         }
 
-        static Dialog ParseLine(string line) {
+        static Dialog ParseLine(string line, int lineIdx) {
             int idx = line.IndexOf(":");
 
             var (attr, p1, p2) = ParseAttributes(line.Substring(0, idx));
             var txt = line.Substring(idx + 1);
 
-            return new Dialog(txt, attr, p1, p2);
+            return new Dialog(txt, attr, p1, p2, lineIdx);
         }
 
         static (string[], string[], string[]) ParseAttributes(string attributes) {
             char[] trimChars = { '[', ']' };
             string key = attributes.Trim(trimChars);
 
-            var allAttr = new List<string>(attributes.Split('|'));
-            string[] p1 = new string[1];
-            string[] p2 = new string[1];
+            var allAttr = new List<string>(key.Split('|'));
+            string[] p1 = new string[0];
+            string[] p2 = new string[0];
 
             for (int i = allAttr.Count - 1; i >= 0; i--) {
                 var attr = allAttr[i];
@@ -86,7 +94,7 @@ namespace TFG.Dialog {
 
                 var startIdx = attr.IndexOf('(');
                 var endIdx = attr.LastIndexOf(')');
-                var tempAttr = attr.Substring(startIdx + 1, endIdx - startIdx);
+                var tempAttr = attr.Substring(startIdx + 1, endIdx - startIdx - 1);
                 var pAttr = tempAttr.Split(',');
 
                 if (attr.StartsWith("P1"))
