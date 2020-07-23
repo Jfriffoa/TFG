@@ -15,6 +15,7 @@ namespace TFG.Dialog.Editor {
         SerializedProperty _tmp;
         SerializedProperty _p1;
         SerializedProperty _p2;
+        SerializedProperty _onload;
         SerializedProperty _start;
         SerializedProperty _next;
         SerializedProperty _finish;
@@ -28,6 +29,7 @@ namespace TFG.Dialog.Editor {
             _tmp = serializedObject.FindProperty("tmp");
             _p1 = serializedObject.FindProperty("P1");
             _p2 = serializedObject.FindProperty("P2");
+            _onload = serializedObject.FindProperty("onLoad");
             _start = serializedObject.FindProperty("onStart");
             _next = serializedObject.FindProperty("onNextDialog");
             _finish = serializedObject.FindProperty("onFinish");
@@ -48,6 +50,7 @@ namespace TFG.Dialog.Editor {
 
             EditorGUILayout.PropertyField(_p1);
             EditorGUILayout.PropertyField(_p2);
+            EditorGUILayout.PropertyField(_onload);
             EditorGUILayout.PropertyField(_start);
             EditorGUILayout.PropertyField(_next);
             EditorGUILayout.PropertyField(_finish);
