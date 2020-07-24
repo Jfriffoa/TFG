@@ -1,7 +1,7 @@
 // Fondo = Lineas del tren, colores normales
 // P1 = Lucia
 
-[P1(enter,on)]:Bien, estoy lista para vivir mi vida.
+[P1(enter,on,img6)]:Bien, estoy lista para vivir mi vida.
 []:No pienso dejarme vencer.
 
 [P1(exit)]:Lucía mira hacia el horizonte.

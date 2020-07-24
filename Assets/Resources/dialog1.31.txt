@@ -1,4 +1,2 @@
 //Fondo = Sala de clases
-//P1 = Profesor
-[]:El estrés la sobrepasa y huye llorando de la sala, dejando la prueba a medias.
-[P1(enter,on)]:*Suspira* Esa niña no soporta nada.
+[]:El estrés la sobrepasa, deja su prueba a medias y se retira de la sala temblando de la frustración.

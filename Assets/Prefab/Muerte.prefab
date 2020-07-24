@@ -134,6 +134,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 0af8d54db02a9d4449e8896178d66f5f,
         type: 3}
+    - target: {fileID: 6486171997255530324, guid: b49034d5008b66b4fb893e02e728eda2,
+        type: 3}
+      propertyPath: sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 03515a353aac6e54eafab7ab19342a1e,
+        type: 3}
+    - target: {fileID: 6486171997255530324, guid: b49034d5008b66b4fb893e02e728eda2,
+        type: 3}
+      propertyPath: sprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0af8d54db02a9d4449e8896178d66f5f,
+        type: 3}
     - target: {fileID: 6681385917389280354, guid: b49034d5008b66b4fb893e02e728eda2,
         type: 3}
       propertyPath: m_Text

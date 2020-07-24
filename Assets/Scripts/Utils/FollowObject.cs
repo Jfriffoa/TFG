@@ -8,7 +8,8 @@ namespace TFG {
         public Vector3 offset;
 
         void LateUpdate() {
-            transform.position = toFollow.position + offset;
+            if (toFollow != null)
+                transform.position = toFollow.position + offset;
         }
     }
 }

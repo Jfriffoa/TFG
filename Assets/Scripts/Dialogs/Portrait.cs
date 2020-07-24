@@ -4,11 +4,18 @@ using UnityEngine.UI;
 namespace TFG.Dialog {
     public class Portrait : MonoBehaviour {
 
+        [System.Serializable]
+        public struct Container {
+            public Sprite sprite;
+            public string name;
+        }
+
         [Header("Portrait variables")]
         public Image portrait;
+        public Text title;
         Animator _animator;
 
-        public Sprite[] sprites;
+        public Container[] sprites;
 
         void Start() {
             _animator = GetComponentInChildren<Animator>();
@@ -26,9 +33,12 @@ namespace TFG.Dialog {
                 // Handle the change of sprite
                     if (attr.StartsWith("img")) {
                     if (int.TryParse(attr.Substring(3), out int idx)) {
-                        idx--;
                         if (idx < sprites.Length) {
-                            portrait.sprite = sprites[idx];
+                            portrait.sprite = sprites[idx].sprite;
+
+                            if (!string.IsNullOrEmpty(sprites[idx].name)){
+                                title.text = sprites[idx].name;
+                            }
                         } else {
                             Debug.LogError("[img] is trying to access non-exist index: " + idx + " in the line " + line, gameObject);
                         }

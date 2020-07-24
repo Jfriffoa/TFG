@@ -176,8 +176,8 @@ MonoBehaviour:
   multiplesScenes: 1
   sceneName: 
   scenes:
-  - 1.1-Chat
-  - 2.1-Chat
+  - 1.1-Pre Examen
+  - 2.1-Muerte
 --- !u!114 &61705364
 MonoBehaviour:
   m_ObjectHideFlags: 0

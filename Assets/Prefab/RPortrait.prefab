@@ -211,10 +211,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portrait: {fileID: 7233690685408318674}
+  title: {fileID: 6681385917389280354}
   sprites:
-  - {fileID: -1283237734719461698, guid: af0d4bee738c91b4b8e9225386bbff6e, type: 3}
-  - {fileID: -6531736815338004026, guid: af0d4bee738c91b4b8e9225386bbff6e, type: 3}
-  - {fileID: 4728297790812395634, guid: af0d4bee738c91b4b8e9225386bbff6e, type: 3}
+  - sprite: {fileID: 0}
+    name: 
+  - sprite: {fileID: 0}
+    name: 
+  - sprite: {fileID: 0}
+    name: 
 --- !u!95 &1146798244582964982
 Animator:
   serializedVersion: 3

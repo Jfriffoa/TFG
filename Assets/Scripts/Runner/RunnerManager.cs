@@ -41,6 +41,10 @@ namespace TFG.Runner {
             gameOverScreen.SetActive(true);
         }
 
+        public void ResumeTime() {
+            Time.timeScale = 1;
+        }
+
         void StartGame() {
             _score = 0;
             AddScore(0);
