@@ -20,7 +20,7 @@ PrefabInstance:
     - target: {fileID: 5194071136423392187, guid: 4c3043ffa7978c740a3bbba021c19b83,
         type: 3}
       propertyPath: sprites.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5194071136423392187, guid: 4c3043ffa7978c740a3bbba021c19b83,
         type: 3}
@@ -104,7 +104,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sprites.Array.data[2].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9adc814a2e5787240852eaf8a7b90052,
+      objectReference: {fileID: 21300000, guid: 59cd2a91ca91df24eaf9c92261be3069,
         type: 3}
     - target: {fileID: 5194071136423392187, guid: 4c3043ffa7978c740a3bbba021c19b83,
         type: 3}
@@ -116,7 +116,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sprites.Array.data[4].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cdb172b6fa352574cadeccc0c9672211,
+      objectReference: {fileID: 21300000, guid: 8866d05a0fb670f4598f7db1a2cd6dd7,
         type: 3}
     - target: {fileID: 5194071136423392187, guid: 4c3043ffa7978c740a3bbba021c19b83,
         type: 3}
@@ -128,7 +128,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sprites.Array.data[6].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cd22f32b739ab6c4b8aedc15e0bb010b,
+      objectReference: {fileID: 21300000, guid: 2e077381c7093a14287ab82f9277df8a,
         type: 3}
     - target: {fileID: 5194071136423392187, guid: 4c3043ffa7978c740a3bbba021c19b83,
         type: 3}
@@ -153,6 +153,12 @@ PrefabInstance:
       propertyPath: sprites.Array.data[7].sprite
       value: 
       objectReference: {fileID: 21300000, guid: fc7b88b97e838cb468c23ded1d72d550,
+        type: 3}
+    - target: {fileID: 5194071136423392187, guid: 4c3043ffa7978c740a3bbba021c19b83,
+        type: 3}
+      propertyPath: sprites.Array.data[11].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 93cd9cd814d505a499840191446ddc08,
         type: 3}
     - target: {fileID: 5194071136423392190, guid: 4c3043ffa7978c740a3bbba021c19b83,
         type: 3}
@@ -270,5 +276,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 632692f4854024b45a6f54b502f39d41,
         type: 3}
+    - target: {fileID: 5194071136668465181, guid: 4c3043ffa7978c740a3bbba021c19b83,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c3043ffa7978c740a3bbba021c19b83, type: 3}

@@ -50,9 +50,15 @@ namespace TFG.Dialog {
                     switch (attr) {
                         case "enter":
                         case "exit":
+                            _animator.SetTrigger(attr);
+                            break;
                         case "on":
+                            _animator.SetTrigger(attr);
+                            transform.SetAsLastSibling();
+                            break;
                         case "off":
                             _animator.SetTrigger(attr);
+                            transform.SetAsFirstSibling();
                             break;
                     }
                 }
