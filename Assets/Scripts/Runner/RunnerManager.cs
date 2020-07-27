@@ -6,12 +6,9 @@ using UnityEngine.UI;
 
 namespace TFG.Runner {
     public class RunnerManager : MonoBehaviour {
+        // Singleton
         static RunnerManager _instance;
-        public static RunnerManager Instance {
-            get {
-                return _instance;
-            }
-        }
+        public static RunnerManager Instance { get => _instance; }
 
         [Header("Game Objects")]
         public RunnerController player;
@@ -24,7 +21,12 @@ namespace TFG.Runner {
         int _score = 0;
 
         void Awake() {
-            _instance = this;
+            if (_instance != null) {
+                Debug.LogWarning("There's another instance of the Manager. Deleting this one");
+                Destroy(gameObject);
+            } else {
+                _instance = this;
+            }
         }
 
         void Start() {

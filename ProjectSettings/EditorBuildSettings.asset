@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testing/Story.unity
     guid: 2579bdec39796df469999799cf16d61a
+  - enabled: 1
+    path: Assets/Scenes/Testing/Stress.unity
+    guid: 1fd8ba9ddbc539f49a5e2a85cbc47555
   m_configObjects: {}
