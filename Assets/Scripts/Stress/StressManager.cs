@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 using TMPro;
 
@@ -12,7 +13,7 @@ namespace TFG.Stress {
         static StressManager _instance;
         public static StressManager Instance { get => _instance; }
 
-        //[Header("UI")]
+        [Header("UI")]
         public Slider stressBar;
         float _stress;
 
@@ -20,6 +21,14 @@ namespace TFG.Stress {
         public float initialTime = 30;
         float _startTime;
 
+        public TextMeshProUGUI postGameText;
+
+        [Header("Stress Effects")]
+        public Image inverted;
+        public Image mask;
+
+        [Header("Callbacks")]
+        public UnityEvent onTimeEnds;
 
         internal void AddStress(float amount) {
             _stress += amount;
@@ -39,17 +48,32 @@ namespace TFG.Stress {
         }
 
         void LateUpdate() {
-            // Rest 5% of stress each second
+            // Rest 5% of stress each second and Update Stress Bar
             _stress = Mathf.Clamp01(_stress - 0.05f * Time.deltaTime);
-            // Update UI
             stressBar.value = _stress;
 
+            // Update Time
             var time = initialTime - Mathf.Ceil(Time.time - _startTime);
             timer.text = time + "";
 
+            // Effects
+            inverted.color = new Color(inverted.color.r, inverted.color.g, inverted.color.b, _stress);
+            mask.color = new Color(mask.color.r, mask.color.g, mask.color.b, (_stress - .25f)/ .75f);
+
+            // Check if Time is over
             if (time <= 0) {
                 Debug.Log("Time Ended");
                 Time.timeScale = 0;
+                onTimeEnds.Invoke();
+
+                PlayerPrefs.SetInt("Stress", Mathf.RoundToInt(_stress));
+                var isStressed = _stress >= 0.5f;
+
+                if (isStressed) {
+                    postGameText.text = "Estás Estresada...";
+                } else {
+                    postGameText.text = "Debes entregar la prueba...";
+                }
             }
         }
     }
