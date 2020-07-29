@@ -14,6 +14,7 @@ namespace TFG.Dialog {
         public Image portrait;
         public Text title;
         Animator _animator;
+        bool _locked = false;
 
         public Container[] sprites;
 
@@ -31,7 +32,7 @@ namespace TFG.Dialog {
                     continue;
 
                 // Handle the change of sprite
-                if (attr.StartsWith("img")) {
+                if (attr.StartsWith("img") && !_locked) {
                     if (int.TryParse(attr.Substring(3), out int idx)) {
                         if (idx < sprites.Length) {
                             portrait.sprite = sprites[idx].sprite;
@@ -63,6 +64,13 @@ namespace TFG.Dialog {
                     }
                 }
             }
+        }
+        public void LockSprite() {
+            _locked = true;
+        }
+
+        public void UnlockSprite() {
+            _locked = false;
         }
     }
 }
