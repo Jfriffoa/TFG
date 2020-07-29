@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 namespace TFG.Runner {
     public class RunnerManager : MonoBehaviour {
@@ -14,11 +15,16 @@ namespace TFG.Runner {
         public RunnerController player;
         public ObstacleSpawner spawner;
         public TileSprite floor;
+        public Transform goal;
 
         [Header("UI")]
         public GameObject gameOverScreen;
         public Text scoreText;
+        public Slider progressBar;
         int _score = 0;
+
+        [Header("Callback")]
+        public UnityEvent onEnd;
 
         void Awake() {
             if (_instance != null) {
@@ -33,18 +39,28 @@ namespace TFG.Runner {
             StartGame();
         }
 
+        void Update() {
+            // Update Progress
+            var progress = player.transform.position.x / goal.position.x;
+            progressBar.value = progress;
+
+            if (progress >= 1)
+                GameOver();
+        }
+
         public void AddScore(int score) {
             _score += score;
-            scoreText.text = "Score: " + _score;
+            //scoreText.text = "Score: " + _score;
+        }
+
+        public void HitPlayer() {
+            player.TakeDamage();
         }
 
         public void GameOver() {
             Time.timeScale = 0;
             gameOverScreen.SetActive(true);
-        }
-
-        public void ResumeTime() {
-            Time.timeScale = 1;
+            onEnd.Invoke();
         }
 
         void StartGame() {

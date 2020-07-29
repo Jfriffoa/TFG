@@ -7,7 +7,6 @@ namespace TFG.Runner {
         public GameObject toSpawn;
         public Vector2 timeToSpawn;
         public float spawnOffset;
-        public Vector2 ySpawn;
 
         public float[] ySpawnList;
 
@@ -35,7 +34,6 @@ namespace TFG.Runner {
                 var spawnPos = _cam.transform.position;
 
                 spawnPos.x += horz + spawnOffset;
-                //spawnPos.y = RandomUtil.Range(ySpawn);
                 spawnPos.y = RandomUtil.RandomPick(ySpawnList);
                 spawnPos.z = transform.position.z;
                 Instantiate(toSpawn, spawnPos, Quaternion.identity, transform);

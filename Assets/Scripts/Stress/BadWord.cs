@@ -14,15 +14,14 @@ namespace TFG.Stress {
         public TextAsset wordsFile;
         public TextMeshProUGUI text; 
 
-        static List<string> _words;
+        static string[] _words;
         static int _lastIdx;
 
         [Header("Movement")]
         public Vector2 speedRange = new Vector2(180, 300);
 
         float _speed;
-        int _dx;
-        int _dy;
+        Vector3 _delta = Vector3.zero;
         bool _isDown = false;
         Rect _bounds;
 
@@ -36,17 +35,12 @@ namespace TFG.Stress {
         void Start() {
             _raycast = GetComponentInParent<GraphicRaycaster>();
             _bounds = transform.parent.GetComponent<RectTransform>().rect;
-            _dx = (Random.Range(0f, 1f) >= 0.5f) ? 1 : -1;
-            _dy = (Random.Range(0f, 1f) >= 0.5f) ? 1 : -1;
-            _speed = Random.Range(speedRange.x, speedRange.y);
+            _delta.x = (Random.Range(0f, 1f) >= 0.5f) ? 1 : -1;
+            _delta.y = (Random.Range(0f, 1f) >= 0.5f) ? 1 : -1;
+            _speed = RandomUtil.Range(speedRange);
 
             // Set new Word different than the last one spawned
-            int idx = _lastIdx;
-            while (idx == _lastIdx) {
-                idx = Random.Range(0, _words.Count);
-            }
-            text.text = _words[idx];
-            _lastIdx = idx;
+            (text.text, _lastIdx) = RandomUtil.RandomPickDifferent(_words, _lastIdx);
         }
 
         void Update() {
@@ -56,14 +50,14 @@ namespace TFG.Stress {
             if (_isDown) {      // Move with the mouse
                 transform.position = Input.mousePosition;
             } else {            // Move by its own
-                var deltaPos = new Vector3(_dx, _dy) * _speed * Time.deltaTime;
+                var deltaPos = _delta * _speed * Time.deltaTime;
                 transform.localPosition += deltaPos;
 
                 //Check bounds
                 if (transform.localPosition.x < _bounds.xMin || transform.localPosition.x > _bounds.xMax)
-                    _dx *= -1;
+                    _delta.x *= -1;
                 if (transform.localPosition.y < _bounds.yMin || transform.localPosition.y > _bounds.yMax)
-                    _dy *= -1;
+                    _delta.y *= -1;
             }
         }
 
@@ -99,14 +93,16 @@ namespace TFG.Stress {
                 return;
 
             // Read File
-            _words = new List<string>();
+            var w = new List<string>();
             using (var reader = new StringReader(wordsFile.text)) {
                 string line;
                 while((line = reader.ReadLine()) != null) {
                     if (!string.IsNullOrEmpty(line))
-                        _words.Add(line);
+                        w.Add(line);
                 }
             }
+
+            _words = w.ToArray();
         }
     }
 }
