@@ -30,6 +30,9 @@ namespace TFG.Dialog {
         public UnityEvent onNextDialog;
         public UnityEvent onFinish;
 
+        [Header("Custom Events")]
+        public UnityEvent[] dialogEvents;
+
         // Dialogue private variables
         List<Dialog> _dialogs;
         int _dialogIndex = 0;
@@ -83,9 +86,22 @@ namespace TFG.Dialog {
         void UpdateAttributes() {
             var dialog = _dialogs[_dialogIndex];
 
-            // TODO: Any general attribute to manage
-            switch (dialog.GeneralAttributes) {
-                default: break;
+            foreach(var attr in dialog.GeneralAttributes) {
+                if (string.IsNullOrEmpty(attr))
+                    continue;
+
+                //Handle custom events
+                if (attr.StartsWith("ev")) {
+                    if (int.TryParse(attr.Substring(2), out int idx)) {
+                        if (idx < dialogEvents.Length) {
+                            dialogEvents[idx].Invoke();
+                        } else {
+                            Debug.LogError("[ev] is trying to access non-exist index: " + idx + " in the line " + dialog.Line, gameObject);
+                        }
+                    } else {
+                        Debug.LogError("There was an [ev] error in line " + dialog.Line, gameObject);
+                    }
+                }
             }
 
             if (P1 != null) {

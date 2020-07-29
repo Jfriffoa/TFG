@@ -31,7 +31,7 @@ namespace TFG.Dialog {
                     continue;
 
                 // Handle the change of sprite
-                    if (attr.StartsWith("img")) {
+                if (attr.StartsWith("img")) {
                     if (int.TryParse(attr.Substring(3), out int idx)) {
                         if (idx < sprites.Length) {
                             portrait.sprite = sprites[idx].sprite;

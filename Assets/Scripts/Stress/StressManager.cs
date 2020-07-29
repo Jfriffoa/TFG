@@ -13,6 +13,9 @@ namespace TFG.Stress {
         static StressManager _instance;
         public static StressManager Instance { get => _instance; }
 
+        [Header("Game")]
+        public SpawnOnUI spawner;
+
         [Header("UI")]
         public Slider stressBar;
         float _stress;
@@ -60,8 +63,13 @@ namespace TFG.Stress {
             inverted.color = new Color(inverted.color.r, inverted.color.g, inverted.color.b, _stress);
             mask.color = new Color(mask.color.r, mask.color.g, mask.color.b, (_stress - .25f)/ .75f);
 
+            // Apply Difficult Change
+            if (time < 20) {
+                spawner.timeToSpawn = Mathf.Lerp(.5f, 2f, (time - 5) / 15);
+            }
+
             // Check if Time is over
-            if (time <= 0) {
+                if (time <= 0) {
                 Debug.Log("Time Ended");
                 Time.timeScale = 0;
                 onTimeEnds.Invoke();

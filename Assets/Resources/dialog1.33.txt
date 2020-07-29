@@ -1,7 +1,8 @@
 //Fondo = Habitación
 //P1 = Lucia
 //P2 = Apuntes
-[P1(enter,on,img0)|P2(enter,off,img1)]:Lo peor es que mañana tengo otro exámen
+//ev0 = Apuntes -> Dormitorio
+[P1(enter,on,img0)]:Lo peor es que mañana tengo otro exámen
 []:Pero por más que estudie ya no me entra nada…
-[P1(img1)]:Mejor me voy a dormir
-[P1(img2)|P2(exit)]:*Suspira* Sólo un poco más…
+[P1(img1)|ev0]:Mejor me voy a dormir
+[P1(img2)]:*Suspira* Sólo un poco más…

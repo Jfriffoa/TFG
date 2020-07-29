@@ -19,6 +19,7 @@ namespace TFG.Dialog.Editor {
         SerializedProperty _start;
         SerializedProperty _next;
         SerializedProperty _finish;
+        SerializedProperty _events;
 
         void OnEnable() {
             _file = serializedObject.FindProperty("rawFile");
@@ -33,6 +34,7 @@ namespace TFG.Dialog.Editor {
             _start = serializedObject.FindProperty("onStart");
             _next = serializedObject.FindProperty("onNextDialog");
             _finish = serializedObject.FindProperty("onFinish");
+            _events = serializedObject.FindProperty("dialogEvents");
         }
 
         public override void OnInspectorGUI() {
@@ -54,6 +56,7 @@ namespace TFG.Dialog.Editor {
             EditorGUILayout.PropertyField(_start);
             EditorGUILayout.PropertyField(_next);
             EditorGUILayout.PropertyField(_finish);
+            EditorGUILayout.PropertyField(_events);
             serializedObject.ApplyModifiedProperties();
         }
     }

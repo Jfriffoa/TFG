@@ -1,8 +1,9 @@
 //Fondo = Habitación
 //P1 = Lucia
 //P2 = Reloj
-[]:Un reloj suena
+//ev0 = Efecto de Sonido
+[ev0]:Un reloj suena
 [P1(enter,on,img5)]:...
-[P1(off)|P2(enter,on,img3)]:Ring Ring!
-[P1(on,img11)|P2(off)]:AAAAAAAARG
-[P1(exit)|P2(exit)]:Lucía apaga la alarma y se va rápidamente de la casa
+[P1(off)|ev0]:Ring Ring!
+[P1(on,img11)]:AAAAAAAARG
+[P1(exit)]:Lucía apaga la alarma y se va rápidamente de la casa
