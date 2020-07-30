@@ -42,6 +42,8 @@ namespace TFG.Runner {
                 speed = Mathf.Lerp(0, _originalSpeed, t);
                 if (t >= 1)
                     _isRecovering = false;
+
+                _animator.SetFloat("RelativeSpeed", speed / _originalSpeed);
             }
         }
 
