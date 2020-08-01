@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: eac17505d1f29dd45bcca14ecd5a79b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2648839843144519242
+    second: old tileset_0
+  - first:
+      213: 462143698030288181
+    second: old tileset_1
+  - first:
+      213: -6970021913380344324
+    second: old tileset_2
+  - first:
+      213: 3603468841167747629
+    second: old tileset_3
+  - first:
+      213: 7959983682201487637
+    second: old tileset_4
+  - first:
+      213: 2315757215273757072
+    second: old tileset_5
+  - first:
+      213: 4657543845601039232
+    second: old tileset_6
+  - first:
+      213: 6770170559408786072
+    second: old tileset_7
+  - first:
+      213: -864274838119647813
+    second: old tileset_8
+  - first:
+      213: 4939947503784363370
+    second: old tileset_9
+  - first:
+      213: -8345701153773236951
+    second: old tileset_10
+  - first:
+      213: 2703376511802628153
+    second: old tileset_11
+  - first:
+      213: 9196170778987886172
+    second: old tileset_12
+  - first:
+      213: -6460818359499630255
+    second: old tileset_13
+  - first:
+      213: -607196559457491808
+    second: old tileset_14
+  - first:
+      213: 4442635042986019657
+    second: old tileset_15
+  - first:
+      213: 4477542624995075679
+    second: old tileset_16
+  - first:
+      213: -8238933921212170408
+    second: old tileset_17
+  - first:
+      213: 31738229624485987
+    second: old tileset_18
+  - first:
+      213: -5514982563897398252
+    second: old tileset_19
+  - first:
+      213: 7569203945725060849
+    second: old tileset_20
+  - first:
+      213: -636038129061241726
+    second: old tileset_21
+  - first:
+      213: -6325859083764403080
+    second: old tileset_22
+  - first:
+      213: 6755406804460257539
+    second: old tileset_23
+  - first:
+      213: -567907884498685218
+    second: old tileset_24
+  - first:
+      213: 7781928711734898009
+    second: old tileset_25
+  - first:
+      213: 6630024395140160488
+    second: old tileset_26
+  - first:
+      213: 5642402041377886288
+    second: old tileset_27
+  - first:
+      213: -5956388446850607113
+    second: old tileset_28
+  - first:
+      213: 5667428933155927026
+    second: old tileset_29
+  - first:
+      213: -805208708183648901
+    second: old tileset_30
+  - first:
+      213: 5718112192020744142
+    second: old tileset_31
+  - first:
+      213: 4417920162293868085
+    second: old tileset_32
+  - first:
+      213: -3396735917215327239
+    second: old tileset_33
+  - first:
+      213: 2131282045353541446
+    second: old tileset_34
+  - first:
+      213: 7100566817959376417
+    second: old tileset_35
+  - first:
+      213: -4661607963909255270
+    second: old tileset_36
+  - first:
+      213: 5848454506960566255
+    second: old tileset_37
+  - first:
+      213: 6407049928839403261
+    second: old tileset_38
+  - first:
+      213: -3874503563908732024
+    second: old tileset_39
+  - first:
+      213: -2906544376420412311
+    second: old tileset_40
+  - first:
+      213: -8772530819890826997
+    second: old tileset_41
+  - first:
+      213: 8586759451324717971
+    second: old tileset_42
+  - first:
+      213: 8363941387910862168
+    second: old tileset_43
+  - first:
+      213: 6761850832384019526
+    second: old tileset_44
+  - first:
+      213: 6602904325036402256
+    second: old tileset_45
+  - first:
+      213: -8513763203898019937
+    second: old tileset_46
+  - first:
+      213: 2816368072013040610
+    second: old tileset_47
+  - first:
+      213: 6613750610989008979
+    second: old tileset_48
+  - first:
+      213: 4833121015031418026
+    second: old tileset_49
+  - first:
+      213: 1795845021075127216
+    second: old tileset_50
+  - first:
+      213: -8211808217297113201
+    second: old tileset_51
+  - first:
+      213: 5774869193341198225
+    second: old tileset_52
+  - first:
+      213: 2391202544545948607
+    second: old tileset_53
+  - first:
+      213: 3598642593514831560
+    second: old tileset_54
+  - first:
+      213: 3795420584587958110
+    second: old tileset_55
+  - first:
+      213: -6222665249608970089
+    second: old tileset_56
+  - first:
+      213: -8640824590744294292
+    second: old tileset_57
+  - first:
+      213: 5686342531791867254
+    second: old tileset_58
+  - first:
+      213: -4371826195454509980
+    second: old tileset_59
+  - first:
+      213: 1543263361646365675
+    second: old tileset_60
+  - first:
+      213: 6475599299448049705
+    second: old tileset_61
+  - first:
+      213: 7274335700213347695
+    second: old tileset_62
+  - first:
+      213: -7519129598403964114
+    second: old tileset_63
+  - first:
+      213: -7738486010703570937
+    second: old tileset_64
+  - first:
+      213: -7324252942368875075
+    second: old tileset_65
+  - first:
+      213: 329595197180240493
+    second: old tileset_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
