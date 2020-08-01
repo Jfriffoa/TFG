@@ -21,6 +21,8 @@ namespace TFG.Runner {
         public GameObject gameOverScreen;
         public Text scoreText;
         public Slider progressBar;
+        public Image darkness;
+        float _initialAlpha;
         int _score = 0;
 
         [Header("Callback")]
@@ -37,12 +39,22 @@ namespace TFG.Runner {
 
         void Start() {
             StartGame();
+
+            if (darkness)
+                _initialAlpha = darkness.color.a;
         }
 
         void Update() {
             // Update Progress
             var progress = player.transform.position.x / goal.position.x;
             progressBar.value = progress;
+
+            if (darkness) {
+                var c = darkness.color;
+                var easeOutT = Mathf.Sin((1 - progress) * Mathf.PI * .5f);
+                c.a = Mathf.Lerp(0, _initialAlpha, easeOutT);
+                darkness.color = c;
+            }
 
             if (progress >= 1)
                 GameOver();

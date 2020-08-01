@@ -6,5 +6,5 @@
 []:Se oyen ruidos de una niña jugando.
 [P1(enter,on,img0)]:Hey, esa soy yo
 [P1(off)|P2(enter,on)]:Wiii, jajajaja
-[P1(on)|P2(exit)]:¿Qué hacemos aquí?
+[P1(on,img7)|P2(exit)]:¿Qué hacemos aquí?
 [P1(off)|P2(enter,img0,on)]:Mirate

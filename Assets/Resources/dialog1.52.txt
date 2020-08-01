@@ -7,7 +7,7 @@
 [P1(enter,on,img3)]:¡Estoy harta!
 []:¡Ya no puedo más!
 [P1(exit)|ev0]:El tren se acerca...
-[P1(enter,on,img4)]:Odio la Universidad, odio mi carrera, odio las estúpidas pruebas.
+[P1(enter,on)]:Odio la Universidad, odio mi carrera, odio las estúpidas pruebas.
 []:Odio que no tenga a nadie, odio sentirme inutil, odio ser una basura.
 [P1(exit)|ev1]:El tren se acerca...
 [P1(enter,on,img3)]:Odio fallar siempre en todo, odio que nadie me apoye, odio estar sola.
