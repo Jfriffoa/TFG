@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: "Jos\xE9 Francisco Riffo"
-  productName: TFG  - The Moral's Game
+  productName: Lucia
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.08627451, g: 0.08627451, b: 0.08627451, a: 1}
@@ -119,7 +119,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.4
+  bundleVersion: 0.5
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -163,11 +163,11 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.JoseFranciscoRiffo.TFGTheMoralsGame
-    Standalone: com.JoseFranciscoRiffo.TFGTheMoralsGame
+    Android: com.JoseFranciscoRiffo.Lucia
+    Standalone: com.JoseFranciscoRiffo.Lucia
   buildNumber:
-    Standalone: 3
-  AndroidBundleVersionCode: 4
+    Standalone: 5
+  AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
