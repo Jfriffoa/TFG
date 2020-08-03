@@ -2,14 +2,14 @@
 //P1 = Lucia
 //P2 = Muerte
 
-[P1(enter,on,img8)]:Soy tan adorable, y tan feliz.
-[P1(off)|P2(enter,on)]:La vida no es tan mala como creemos.
+[P1(enter,on,img8)]:Soy tan adorable, y tan feliz
+[P1(off)|P2(enter,on)]:La vida no es tan mala como creemos
 []:A veces olvidamos los buenos momentos que hemos tenido
 []:Y aquello que nos hace feliz
 [P1(on,img7)|P2(off)]:¿Para eso me has traído aquí? ¿Para ser feliz?
-[P1(off)|P2(on)]:Debo ser imparcial, y mostrarte lo necesario para que encuentres la paz.
+[P1(off)|P2(on)]:Debo ser imparcial, y mostrarte lo necesario para que encuentres la paz
 [P1(exit)|P2(exit)]:La muerte abre otro portal y entra por él
 
 // Aquí deberia aparecer con una sonrisa
-[P1(enter,on,img9)]:Huh..
-[P1(exit)]:Lucia la sigue por el portal una vez más.
+[P1(enter,on,img9)]:Huh...
+[P1(exit)]:Lucia la sigue por el portal una vez más

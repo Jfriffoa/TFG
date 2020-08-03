@@ -2,15 +2,15 @@
 //P1 = Lucia
 //P2 = Muerte
 
-[P1(enter,on,img0)]:No lo entiendo.
-[P1(off)|P2(enter,on)]:Creí que estos recuerdos responderian tus dudas.
-[P1(on,img7)|P2(off)]:Si lo hacen, pero no entiendo el último de ellos.
-[P1(img0)]:Estaba feliz.
-[]:Me encantaba la música y tocar la guitarra..
+[P1(enter,on,img0)]:No lo entiendo
+[P1(off)|P2(enter,on)]:Creí que estos recuerdos responderian tus dudas
+[P1(on,img7)|P2(off)]:Si lo hacen, pero no entiendo el último de ellos
+[P1(img0)]:Estaba feliz
+[]:Me encantaba la música y tocar la guitarra...
 [P1(img7)]:¿Pero que tiene que ver ello con mi muerte?
-[P1(off)|P2(on)]:La vida no es solo blanco y negro.
-[]:Para ayudarte a encontrar la paz debo mostrarte todos sus matices.
-[]:Tanto lo bueno, como lo malo.
+[P1(off)|P2(on)]:La vida no es solo blanco y negro
+[]:Para ayudarte a encontrar la paz debo mostrarte todos sus matices
+[]:Tanto lo bueno, como lo malo
 [P1(exit)|P2(exit)]:Se abre un nuevo portal
-[P2(enter,on)]:Ven, quiero que veas algo más.
-[P2(exit)]:Entran ambos al portal y éste se cierra detrás de ellos.
+[P2(enter,on)]:Ven, quiero que veas algo más
+[P2(exit)]:Entran ambos al portal y éste se cierra detrás de ellos

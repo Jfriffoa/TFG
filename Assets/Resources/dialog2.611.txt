@@ -1,0 +1,4 @@
+// Fondo = Lineas del tren, colores normales
+// P1 = Lucia
+
+[P1(enter,off,img10)|P2(enter,img0)]:Que así sea

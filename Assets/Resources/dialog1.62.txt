@@ -1,9 +1,9 @@
 //Fondo = Lineas del tren
 []:El tren pasa por la vias tan puntual como siempre
-[]:Tan puntual como Lucía sabia que pasaría.
+[]:Tan puntual como Lucía sabia que pasaría
 []:...
 
 []:Y así fue como en un suspiro, en una acción, en un solo salto...
-[]:Su historia llego a un final.
+[]:Su historia llego a un final
 
 //Después de esto se muestra una imagen de las lineas del tren con una flor naciendo de ellas

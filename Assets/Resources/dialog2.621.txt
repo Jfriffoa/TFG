@@ -1,0 +1,11 @@
+// Fondo = Linea del tren
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(enter,on,img10)]:Lo hecho, hecho está
+[P1(off)|P2(enter,on)]:Como prefieras
+[P2(off)]:La muerte abre un nuevo portal
+
+[P2(exit)]:Lucia da un ultimo vistazo a la linea del tren, antes de seguir a la muerte a través del último portal
+[P1(exit)]:El portal se cierra detrás de ellos...
+[]:Y con ello, su historia
