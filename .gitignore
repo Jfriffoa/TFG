@@ -85,4 +85,12 @@ $RECYCLE.BIN/
 
 # Binaries
 *.psd
+*.psd.meta
 *.aseprite
+*.aseprite.meta
+
+# Oauth files
+google-services.json
+google-services.json.meta
+google-services-desktop.json
+google-services-desktop.json.meta

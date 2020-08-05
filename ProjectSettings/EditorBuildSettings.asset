@@ -41,22 +41,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Death Route/2.5-Final.unity
     guid: 9cbaf0fc9c43aed4c8a7dfc36acec98d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/0.x-Decision Final.unity
     guid: bf18c2fb53a58aa48a69192b04409d4a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testing/Menu.unity
     guid: 838c9c4785396e147bd035ddfa3d3b73
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testing/Runner.unity
     guid: 5830586f02849444281efa00698dabed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testing/Jigsaw.unity
     guid: 3bf5a000231cb074bae2d8bd2ca1fbd5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testing/Story.unity
     guid: 2579bdec39796df469999799cf16d61a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testing/Stress.unity
     guid: 1fd8ba9ddbc539f49a5e2a85cbc47555
   m_configObjects: {}
