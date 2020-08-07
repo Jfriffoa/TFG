@@ -35,6 +35,9 @@ namespace TFG.Stress {
 
         internal void AddStress(float amount) {
             _stress += amount;
+            if (_stress >= 0.5f) {
+                WillingnessController.Instance.AddWillingness(-amount/ 2f);
+            }
         }
 
         void Awake() {
@@ -64,8 +67,8 @@ namespace TFG.Stress {
             mask.color = new Color(mask.color.r, mask.color.g, mask.color.b, (_stress - .25f)/ .75f);
 
             // Apply Difficult Change
-            if (time < 20) {
-                spawner.timeToSpawn = Mathf.Lerp(.5f, 2f, (time - 5) / 15);
+            if (time < 25) {
+                spawner.timeToSpawn = Mathf.Lerp(.5f, 2f, (time - 5) / 20);
             }
 
             // Check if Time is over

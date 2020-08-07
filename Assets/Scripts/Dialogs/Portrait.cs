@@ -72,5 +72,19 @@ namespace TFG.Dialog {
         public void UnlockSprite() {
             _locked = false;
         }
+
+        public void Hide() {
+            _animator.enabled = false;
+            for (int i = 0; i < transform.childCount; i++) {
+                transform.GetChild(i).gameObject.SetActive(false);
+            }
+        }
+
+        public void Show() {
+            _animator.enabled = true;
+            for (int i = 0; i < transform.childCount; i++) {
+                transform.GetChild(i).gameObject.SetActive(true);
+            }
+        }
     }
 }

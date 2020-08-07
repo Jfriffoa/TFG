@@ -26,6 +26,8 @@ namespace TFG.Runner {
         int _score = 0;
 
         [Header("Callback")]
+        public UnityEvent onHitPlayer;
+        public UnityEvent onScoreAdded;
         public UnityEvent onEnd;
 
         void Awake() {
@@ -63,10 +65,12 @@ namespace TFG.Runner {
         public void AddScore(int score) {
             _score += score;
             //scoreText.text = "Score: " + _score;
+            onScoreAdded.Invoke();
         }
 
         public void HitPlayer() {
             player.TakeDamage();
+            onHitPlayer.Invoke();
         }
 
         public void GameOver() {
