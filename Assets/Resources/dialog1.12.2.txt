@@ -1,0 +1,19 @@
+// Fondo = Dormitorio de Lucia
+// ev0 = Dormitorio -> Pildoras
+// ev1 = Pildoras -> Dormitorio
+// ev2 = Dormitorio -> Apuntes
+// ev3 = Efecto de Sonido
+// P1 = Lucia
+// P2 = Pildoras
+// P2,img1 = Papeles
+
+[P1(enter,on,img0)]:...
+[P1(img1)]:No...
+[]:No puedo...
+[]:Otro día sin tener la valentia suficiente para hacerlo...
+[ev1]:*Suspira*
+[]:Supongo que debo alistarme. La prueba de hoy no estará nada facíl...
+[P1(off)|ev2]:...
+[P1(on)]:De algo que sirva levantarme a las 4 am
+
+[P1(exit)]:Lucía se dedica a estudiar y repasar sus apuntes hasta las 7 am, momento en el cual parte hacia su universidad

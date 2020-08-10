@@ -1,11 +1,7 @@
-//Fondo = Habitación
-//P1 = Lucia
-//P2 = Reloj
-//ev0 = Efecto de Sonido
-//ev1 = Decision
-[ev0]:Un reloj suena
-[P1(enter,on,img5)]:...
-[ev1]:...
-[P1(off)|ev0]:Ring Ring!
-[P1(on,img11)]:AAAAAAAARG
-[P1(exit)]:Lucía apaga la alarma y se va rápidamente de la casa
+// Vias del tren
+
+[P1(enter,on,img1)|ev1]:Bueno, al menos mi padre es feliz con que estudie esto
+[P1(img7)]:Sólo son un par de semestres más y todo acabará...
+[P1(off)|ev0]:...
+[P1(on,img1)|ev2]:*Suspira* Sólo un poco más...
+[P1(exit)]:Lucía se levanta y regresa a casa

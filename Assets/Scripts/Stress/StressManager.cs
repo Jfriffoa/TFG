@@ -72,7 +72,7 @@ namespace TFG.Stress {
             }
 
             // Check if Time is over
-                if (time <= 0) {
+            if (time <= 0) {
                 Debug.Log("Time Ended");
                 Time.timeScale = 0;
                 onTimeEnds.Invoke();

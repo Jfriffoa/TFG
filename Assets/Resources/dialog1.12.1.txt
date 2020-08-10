@@ -7,6 +7,6 @@
 // P2 = Pildoras
 // P2,img1 = Papeles
 
-[ev3]:Un reloj suena
-[ev0]:*Suspira*...
-[P1(enter,on,img7)]:¿Tomarmelas todas...?
+[P1(enter,on,img0)]:...
+[P1(img1)]:Bueno, aquí vamos...
+[ev3]:*
