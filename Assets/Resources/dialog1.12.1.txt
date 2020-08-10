@@ -1,6 +1,6 @@
-// Fondo = Dormitorio de Lucia
-// ev0 = Dormitorio -> Pildoras
-// ev1 = Pildoras -> Dormitorio
+// Fondo = Pildoras
+// ev0 = Apuntes piso -> Dormitorio normal
+// ev1 = Pildoras -> Apuntes piso
 // ev2 = Dormitorio -> Apuntes
 // ev3 = Efecto de Sonido
 // P1 = Lucia
@@ -9,4 +9,21 @@
 
 [P1(enter,on,img0)]:...
 [P1(img1)]:Bueno, aquí vamos...
-[ev3]:*
+[ev3]:*Ruido extraño*
+[P1(img0)]:Eek!
+[P1(off)]:Lucia suelta las pastillas por el susto
+[P1(on)|ev1]:¡Oh no!
+[]:¿Donde estan?
+[P1(off)]:Después de un rato, logra encontrarlas debajo de su cama
+[]:Sin embargo, estan fuera del alcance de Lucia
+[P1(on,img3)]:Rayos!
+[]:...
+[P1(img1)]:*Suspira*...
+[]:Bueno...
+[]:Por algo ocurren las cosas
+[]:Mejor levanto mis apuntes y me pongo a estudiar
+[ev0]:Después de todo, la prueba de hoy no estará nada fácil
+[P1(off)|ev2]:...
+[P1(on)]:De algo que sirva levantarme a las 4 am
+
+[P1(exit)]:Lucía se dedica a estudiar y repasar sus apuntes hasta las 7 am, momento en el cual parte hacia su universidad

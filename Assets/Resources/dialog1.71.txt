@@ -5,7 +5,6 @@
 //ev1 = Decision
 [ev0]:Un reloj suena
 [P1(enter,on,img5)]:...
-[ev1]:...
 [P1(off)|ev0]:Ring Ring!
 [P1(on,img11)]:AAAAAAAARG
 [P1(exit)]:Lucía apaga la alarma y se va rápidamente de la casa
