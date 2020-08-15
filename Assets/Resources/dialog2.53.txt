@@ -1,0 +1,10 @@
+// Habitación + Lucia tocando guitarra
+// P1 = Lucia
+// P2 = Muerte
+// ev0 = Lucia con guitarra
+
+[P1(enter,on,img7)]:¿De vuelta en mi habitación?
+[P1(off)|P2(enter,on,img0)]:Así es, pero no estamos solos esta vez.
+[ev0]:*Tararea una canción*
+
+//MINIJUEGO

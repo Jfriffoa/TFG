@@ -1,0 +1,10 @@
+// Habitación con Lucia y guitarra
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(enter,on,img1)]:Esa fue la última vez que disfruté así con la música...
+[P1(off)|P2(enter,on,img0)]:La última no
+[]:Puesto que acabas de volver a disfrutar con ella ahora
+[P1(exit)|P2(exit)]:La muerte abre un último portal y entra por él.
+[P1(enter,on,img8)]:Supongo que tiene razón
+[P1(exit)]:Lucia entra por el portal detrás de la muerte.

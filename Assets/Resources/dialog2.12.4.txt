@@ -1,0 +1,8 @@
+// No entiendo...
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(on,img7)|P2(off)]:Me cuesta entenderlo aún...
+[P1(exit)|P2(exit)]:La muerte hace uso de sus poderes y abre otro portal junto a Lucía.
+[P2(enter,on)]:Ya lo entenderás a su tiempo
+[]:Ahora ven, acompañame

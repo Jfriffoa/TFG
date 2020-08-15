@@ -1,0 +1,10 @@
+// ¿Qué haces aquí?
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(on,img7)|P2(off)]:¿Para qué estás aquí?
+[P1(off)|P2(on)]:Tu vida ha terminado antes de tiempo
+[]:Tu alma está inquieta
+[]:Y no puede encontrar el camino al descanso eterno
+[]:Yo estoy aquí para ayudarte con eso
+[]:Para que puedas encontrar esa paz.

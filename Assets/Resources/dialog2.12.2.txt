@@ -1,0 +1,8 @@
+// ¿Morí?
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(on,img7)|P2(off)]:¿Estoy muerta? ¿Cómo? ¿Por qué?
+[P1(off)|P2(on)]:Tranquila, es normal que no lo recuerdes
+[]:Tu muerte no fue natural
+[]:Y consecuencia de ello es tu falta de memoria al respecto.

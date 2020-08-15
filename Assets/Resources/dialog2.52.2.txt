@@ -1,0 +1,4 @@
+// ¿Algo más?
+
+[P1(on,img7)|P2(off)]:¿Algo más que deba saber?
+[P1(off)|P2(on)]:Debes seguirme para avergiuarlo

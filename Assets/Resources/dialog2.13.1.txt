@@ -1,0 +1,6 @@
+// Shoto Matte
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(on,img7)|P2(off)]:Espera un momento...
+[P1(off)|P2(on)]:¿Aún tienes dudas?

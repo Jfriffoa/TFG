@@ -1,0 +1,8 @@
+// Ser feliz...
+
+[P1(off)|P2(on)]:Vamos, aún queda algo más por ver
+[P1(exit)|P2(exit)]:La muerte abre otro portal y entra por él
+
+// Aquí deberia aparecer con una sonrisa
+[P1(enter,on,img9)]:Huh...
+[P1(exit)]:Lucia la sigue por el portal una vez más

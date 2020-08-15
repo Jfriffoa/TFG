@@ -1,0 +1,6 @@
+// ¿Para eso me trajiste?
+
+[P1(on,img7)|P2(off)]:¿Para eso me has traido aquí?
+[]:¿Para ser feliz?
+[P1(off)|P2(on)]:Debo ser imparcial
+[]:Y mostrarte lo necesario para que encuentres la paz.

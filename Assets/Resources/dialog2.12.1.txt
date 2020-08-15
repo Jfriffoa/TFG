@@ -1,0 +1,9 @@
+// ¿Quién eres?
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(on,img7)|P2(off)]:¿Quién eres tu?
+[P1(off)|P2(on)]:Tengo varios nombres
+[]:Algunos me llaman Katrina
+[]:Otros me dicen la Parka
+[]:Para ti puedo ser, "La Muerte".

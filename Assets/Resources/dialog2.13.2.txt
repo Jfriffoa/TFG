@@ -1,0 +1,7 @@
+// Vamonos
+// P1 = Lucia
+// P2 = Muerte
+
+[P1(exit)|P2(exit)]:La muerte cruza el portal
+[P1(enter,off)]:Lucía duda por unos segundos, pero decide cruzar el portal.
+[P1(exit)]:El portal se cierra detrás de ellos.
