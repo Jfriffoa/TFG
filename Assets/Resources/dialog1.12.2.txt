@@ -1,3 +1,4 @@
+// No tomarse las pildoras
 // Fondo = Dormitorio de Lucia
 // ev0 = Dormitorio -> Pildoras
 // ev1 = Pildoras -> Dormitorio

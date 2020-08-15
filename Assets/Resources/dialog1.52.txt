@@ -5,5 +5,5 @@
 [P1(enter,on,img1)]:Estoy demasiado abrumada
 [P1(img0)]:Y por si fuera poco mañana tengo otro examen
 [P1(img7)]:Pero por más que estudie ya no me entra nada...
-[ev0]:Mejor me voy a dormir
-[P1(img1)]:*Suspira* Sólo un poco más...
+
+// Decisión

@@ -1,0 +1,5 @@
+//Irse a dormir
+//ev0 = Apuntes -> Dormitorio
+
+[P1(enter,img7,on)|ev0]:Mejor me voy a dormir
+[P1(img1)]:*Suspira* Sólo un poco más...

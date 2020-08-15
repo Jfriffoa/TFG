@@ -1,3 +1,4 @@
+// Tomarse las Pildoras
 // Fondo = Pildoras
 // ev0 = Apuntes piso -> Dormitorio normal
 // ev1 = Pildoras -> Apuntes piso
@@ -13,10 +14,10 @@
 [P1(img0)]:Eek!
 [P1(off)]:Lucia suelta las pastillas por el susto
 [P1(on)|ev1]:¡Oh no!
-[]:¿Donde estan?
+[]:¿Dónde están?
 [P1(off)]:Después de un rato, logra encontrarlas debajo de su cama
 []:Sin embargo, estan fuera del alcance de Lucia
-[P1(on,img3)]:Rayos!
+[P1(on,img3)]:¡Rayos!
 []:...
 [P1(img1)]:*Suspira*...
 []:Bueno...

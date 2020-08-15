@@ -1,0 +1,15 @@
+// Quedarse estudiando
+//ev0 = Black fade in
+//ev1 = Black fade out, Habitación
+
+[P1(enter,on,img7)]:Tampoco puedo asistir a la prueba de mañana sin estudiar
+[]:Necesito obtener una buena calificación...
+[P1(img1)]:*Suspira* Hay que hacer lo que hay que hacer
+[P1(exit)]:Se toma una pastilla para la concentración y comienza a estudiar para su exámen
+[ev0]:...
+[]:Unas horas despues
+[P1(enter,on,img12)|ev1]:Oh no...
+[]:*Gulp*
+[P1(exit)]:El agotamiento le causa fatiga y va al baño a vomitar.
+
+// Ahora se pasa al baño, 1.54
