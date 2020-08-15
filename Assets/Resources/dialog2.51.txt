@@ -3,7 +3,7 @@
 //P2 = Muerte
 
 [P1(enter,on,img8)]:Soy tan adorable, y tan feliz
-[P1(off)|P2(enter,on)]:La vida no es tan mala como creemos
+[P1(off)|P2(enter,on,img0)]:La vida no es tan mala como creemos
 []:A veces olvidamos los buenos momentos que hemos tenido
 []:Y aquello que nos hace feliz
 

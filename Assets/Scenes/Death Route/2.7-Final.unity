@@ -1475,12 +1475,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 289622537}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &289622539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8806730536891729249, guid: 3c78ffafecbcf534989427d852e8c42e,
-    type: 3}
-  m_PrefabInstance: {fileID: 289622537}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &361378195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3130,7 +3124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b8ae438b07e744fa61efe3e134e11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rawFile: {fileID: 4900000, guid: 4777ed5fe4e9bba469e416d40e7dbd80, type: 3}
+  rawFile: {fileID: 4900000, guid: 66009ce46640ecf41ad28269a7c98982, type: 3}
   loadOnStart: 1
   beginOnLoad: 1
   useTMP: 1
@@ -3183,53 +3177,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  dialogEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 361378198}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1828784201}
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1536959628}
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 289622539}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+  dialogEvents: []
 --- !u!222 &1217591510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3250,7 +3198,7 @@ GameObject:
   - component: {fileID: 1290419805}
   - component: {fileID: 1290419804}
   m_Layer: 5
-  m_Name: Pasado
+  m_Name: Habitacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3298,7 +3246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0bae3a2185f8caa40b807715675eea5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e4601521c9106974485d88096e33deee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
