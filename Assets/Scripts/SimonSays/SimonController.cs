@@ -86,9 +86,9 @@ namespace TFG.SimonSays {
         void NextSequence() {
             // Check if we won
             if (_sequenceIndex >= _sequence.Length) {
-                Debug.Log("WON");
                 //Disable buttons
                 transform.BroadcastMessage("Win", winColor);
+                Persistence.Log("Simon Says Won");
                 onWin.Invoke();
                 return;
             }

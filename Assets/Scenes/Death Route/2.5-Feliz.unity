@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onStart: 0
-  delay: 0.5
+  delay: 0.3
   _event:
     m_PersistentCalls:
       m_Calls:

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4570431047163079197}
   - component: {fileID: 4570431047163079196}
   - component: {fileID: 4570431047163079202}
+  - component: {fileID: 5281439837187728938}
   m_Layer: 5
   m_Name: Leaf
   m_TagString: Untagged
@@ -67,7 +68,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: a275e401adccf2240bbbd465c55b46e0, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -87,7 +88,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fe8a060581edc478ad0bc00fa96e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  probabilityOfChange: 0.101
+  probabilityOfChange: 0.1
   distanceMargin: {x: 25, y: 100}
   cooldown: {x: 2, y: 8}
   possibleAngles: {x: 0, y: 360}
+--- !u!114 &5281439837187728938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4570431047163079198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf3c39938eb18a468cd35e493b03b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startRandom: 1
+  target: {fileID: 4570431047163079196}
+  sprites:
+  - {fileID: 5781445747943558089, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -4987604261762582073, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -523785638395380996, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 3367937062702938480, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -2450514321936213949, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -8836365005895674108, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 5350574393042959420, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 833906559529328329, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 1181017386028152738, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}

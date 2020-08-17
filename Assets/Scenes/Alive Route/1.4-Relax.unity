@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 88124162}
   - component: {fileID: 88124164}
   - component: {fileID: 88124163}
+  - component: {fileID: 88124165}
   m_Layer: 5
   m_Name: Leaf
   m_TagString: Untagged
@@ -177,9 +178,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a275e401adccf2240bbbd465c55b46e0, type: 3}
+  m_Sprite: {fileID: -84595725385319728, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -195,6 +196,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88124161}
   m_CullTransparentMesh: 0
+--- !u!114 &88124165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88124161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf3c39938eb18a468cd35e493b03b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startRandom: 1
+  target: {fileID: 0}
+  sprites:
+  - {fileID: 5781445747943558089, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -4987604261762582073, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -523785638395380996, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 3367937062702938480, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -2450514321936213949, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -8836365005895674108, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 5350574393042959420, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 833906559529328329, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 1181017386028152738, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
 --- !u!1 &194310518
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +231,7 @@ GameObject:
   - component: {fileID: 194310519}
   - component: {fileID: 194310521}
   - component: {fileID: 194310520}
+  - component: {fileID: 194310522}
   m_Layer: 5
   m_Name: Leaf (1)
   m_TagString: Untagged
@@ -251,9 +277,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a275e401adccf2240bbbd465c55b46e0, type: 3}
+  m_Sprite: {fileID: -84595725385319728, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -269,6 +295,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194310518}
   m_CullTransparentMesh: 0
+--- !u!114 &194310522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194310518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf3c39938eb18a468cd35e493b03b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startRandom: 1
+  target: {fileID: 0}
+  sprites:
+  - {fileID: 5781445747943558089, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -4987604261762582073, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -523785638395380996, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 3367937062702938480, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -2450514321936213949, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -8836365005895674108, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 5350574393042959420, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 833906559529328329, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 1181017386028152738, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
 --- !u!224 &217723055 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4570431047163079199, guid: 02937503c74f33e40956ef164b5c6bcf,
@@ -3548,6 +3598,7 @@ GameObject:
   - component: {fileID: 1431890342}
   - component: {fileID: 1431890344}
   - component: {fileID: 1431890343}
+  - component: {fileID: 1431890345}
   m_Layer: 5
   m_Name: Leaf (2)
   m_TagString: Untagged
@@ -3593,9 +3644,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a275e401adccf2240bbbd465c55b46e0, type: 3}
+  m_Sprite: {fileID: -84595725385319728, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3611,6 +3662,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431890341}
   m_CullTransparentMesh: 0
+--- !u!114 &1431890345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431890341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf3c39938eb18a468cd35e493b03b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startRandom: 1
+  target: {fileID: 0}
+  sprites:
+  - {fileID: 5781445747943558089, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -4987604261762582073, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -523785638395380996, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 3367937062702938480, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -2450514321936213949, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: -8836365005895674108, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 5350574393042959420, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 833906559529328329, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
+  - {fileID: 1181017386028152738, guid: a96866d5e61bc8542be7cd5adfc3f84c, type: 3}
 --- !u!1 &1480560161
 GameObject:
   m_ObjectHideFlags: 0
@@ -3665,13 +3740,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.3773585, b: 0.17627321, a: 1}
+  m_Color: {r: 0.4265734, g: 0.7830189, b: 0.3508811, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af51b0e64fcbbf846ac556edb78a2cd3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d07786a6fbc3f2d4b83138e05fb3aba1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

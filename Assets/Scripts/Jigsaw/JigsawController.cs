@@ -48,7 +48,8 @@ namespace TFG.Jigsaw {
 
             if (_piecesDone == board.childCount) {
                 // WIN
-                Debug.Log("Jigsaw Completed", gameObject);
+                //Debug.Log("Jigsaw Completed", gameObject);
+                Persistence.Log("Jigsaw Completed");
                 onWin.Invoke();
             }
         }

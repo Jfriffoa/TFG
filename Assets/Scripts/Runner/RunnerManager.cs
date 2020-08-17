@@ -76,6 +76,7 @@ namespace TFG.Runner {
         public void GameOver() {
             Time.timeScale = 0;
             gameOverScreen.SetActive(true);
+            Persistence.Log("Runner Ended");
             onEnd.Invoke();
         }
 
