@@ -66,9 +66,23 @@ namespace TFG {
         }
 
         public void SaveData() {
-            _root.Child("users").Child(_auth.CurrentUser.UserId).SetValueAsync(data).ContinueWith(task => {
+            //Dictionary<string, object> childUpdates = new Dictionary<string, object> {
+            //    ["/userData"] = data.userData.ToDictionary(),
+            //    ["/gameData"] = data.gameData.ToDictionary(),
+            //    ["/prePollData"] = data.prePollData.ToDictionary(),
+            //    ["/postPollData"] = data.postPollData.ToDictionary()
+            //};
+            //_root.Child("users").Child(_auth.CurrentUser.UserId).UpdateChildrenAsync(childUpdates).ContinueWith(task => {
+            //    if (task.IsCompleted) {
+            //        _lastSavedData = data;
+            //        Persistence.Log("Data Saved");
+            //    }
+            //});
+
+            _root.Child("users").Child(_auth.CurrentUser.UserId).SetValueAsync(data.ToDictionary()).ContinueWith(task => {
                 if (task.IsCompleted) {
                     _lastSavedData = data;
+                    Persistence.Log("Data Saved");
                 }
             });
         }
@@ -78,9 +92,11 @@ namespace TFG {
             _root.Child("users").Child(_auth.CurrentUser.UserId).SetValueAsync(diff).ContinueWith(task => {
                 if (task.IsCompleted) {
                     _lastSavedData = data;
+                    Persistence.Log("Data Saved");
                 }
             });
         }
+        
 
         // Persistent Logging (For when a crash ocurrs)
         public enum Severity { Info, Warning, Error }

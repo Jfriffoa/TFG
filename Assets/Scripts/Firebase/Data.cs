@@ -18,24 +18,24 @@ namespace TFG {
         public class GameData : Data {
             //TODO: Definir que data guardar y cuando guardarla.
             // Enums de decisiones (Por un tema de orden)
-            public enum Decision { Vivir, Morir }
-            public enum Pastillas { Tomarlas, Ignorarlas }
-            public enum Estudio { Estudiar, Dormir }
+            public enum Decision { Vivir, Morir, NoDecide }
+            public enum Pastillas { Tomarlas, Ignorarlas, NoDecide }
+            public enum Estudio { Estudiar, Dormir, NoDecide }
 
             // Decisión inicial
-            public Decision decisionInicial;
+            public Decision decisionInicial = Decision.NoDecide;
             public float tiempoDecisionInicial = -1;
 
             // Ruta viva
-            public Pastillas decisionPastillas;
+            public Pastillas decisionPastillas = Pastillas.NoDecide;
             public float tiempoDecisionPastillas = -1;
-            public Estudio decisionEstudio;
+            public Estudio decisionEstudio = Estudio.NoDecide;
             public float tiempoDecisionEstudio = -1;
 
             // Ruta Muerta
 
             // Decisión final
-            public Decision decisionFinal;
+            public Decision decisionFinal = Decision.NoDecide;
             public float tiempoDecisionFinal = -1;
         }
 
@@ -50,19 +50,19 @@ namespace TFG {
     }
 
     // Each class creates its own dictionary with its properties.
-    public class Data {
+    public abstract class Data {
         public Dictionary<string, object> ToDictionary() {
             Dictionary<string, object> result = new Dictionary<string, object>();
-            foreach (PropertyInfo property in GetType().GetProperties()) {
+            foreach (FieldInfo field in GetType().GetFields()) {
                 // If it's an enum, save it as string
-                if (property.PropertyType == typeof(System.Enum)) {
-                    result[property.Name] = ((System.Enum)property.GetValue(this)).ToString();
+                if (field.FieldType.IsEnum) {
+                    result[field.Name] = ((System.Enum)field.GetValue(this)).ToString();
                 // If it's a "Data" type, save its own dictionary.
-                } else if (property.PropertyType == typeof(Data)) {
-                    result[property.Name] = ((Data)property.GetValue(this)).ToDictionary();
+                } else if (field.FieldType.IsSubclassOf(typeof(Data))) {
+                    result[field.Name] = ((Data)field.GetValue(this)).ToDictionary();
                 // If it's anything else, save it normally
                 } else {
-                    result[property.Name] = property.GetValue(this);
+                    result[field.Name] = field.GetValue(this);
                 }
             }
             return result;
@@ -70,18 +70,18 @@ namespace TFG {
 
         public Dictionary<string, object> GetDifferences(Data lastSave) {
             Dictionary<string, object> result = new Dictionary<string, object>();
-            foreach (PropertyInfo property in GetType().GetProperties()) {
+            foreach (FieldInfo field in GetType().GetFields()) {
                 // Check if we are differents
-                if (property.GetValue(this) != property.GetValue(lastSave)) {
+                if (field.GetValue(this) != field.GetValue(lastSave)) {
                     // If it's an enum, save it as string
-                    if (property.PropertyType == typeof(System.Enum)) {
-                        result[property.Name] = ((System.Enum)property.GetValue(this)).ToString();
+                    if (field.FieldType.IsEnum) {
+                        result[field.Name] = ((System.Enum)field.GetValue(this)).ToString();
                     // If it's a "Data" type, check their differences and save them.
-                    } else if (property.PropertyType == typeof(Data)) {
-                        result[property.Name] = ((Data)property.GetValue(this)).GetDifferences((Data)property.GetValue(lastSave));
+                    } else if (field.FieldType.IsSubclassOf(typeof(Data))) {
+                        result[field.Name] = ((Data)field.GetValue(this)).GetDifferences((Data)field.GetValue(lastSave));
                     // If it's anything else, save it normally
                     } else {
-                        result[property.Name] = property.GetValue(this);
+                        result[field.Name] = field.GetValue(this);
                     }
                 }
             }
