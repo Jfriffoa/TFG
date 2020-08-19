@@ -37,7 +37,7 @@ namespace TFG.Questionaries {
         bool _isPostQuestionarie = false;
 
         // Check which questionarie to load
-        void Start() {
+        void Awake() {
             bool isPreQuestionarieDone = PlayerPrefs.GetInt(PRE_QUESTIONARIE, 0) == 1;
             bool isGameDone = PlayerPrefs.GetInt(GAME_DONE, 0) == 1;
             bool isPostQuestionarieDone = PlayerPrefs.GetInt(POST_QUESTIONARIE, 0) == 1;
@@ -66,7 +66,7 @@ namespace TFG.Questionaries {
             introText.text = postQuestionarie.introText;
             endText.text = postQuestionarie.endText;
             // We won't need to ask for demographics again
-            Destroy(demographicsPanel);
+            DestroyImmediate(demographicsPanel);
             _isPostQuestionarie = true;
         }
 
