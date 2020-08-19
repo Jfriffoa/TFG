@@ -42,8 +42,8 @@ namespace TFG {
             // Initialize Data
             data = new AppData() {
                 gameData = new AppData.GameData(),
-                postPollData = new AppData.PostPollData(),
-                prePollData = new AppData.PrePollData(),
+                postPollData = new AppData.QuestionarieData(),
+                prePollData = new AppData.QuestionarieData(),
                 userData = new AppData.UserData()
             };
             _lastSavedData = data;

@@ -6,8 +6,8 @@ namespace TFG {
     public class AppData : Data {
         public UserData userData;
         public GameData gameData;
-        public PrePollData prePollData;
-        public PostPollData postPollData;
+        public QuestionarieData prePollData;
+        public QuestionarieData postPollData;
 
         public class UserData : Data {
             public int edad = -1;
@@ -37,16 +37,12 @@ namespace TFG {
             // Decisión final
             public Decision decisionFinal = Decision.NoDecide;
             public float tiempoDecisionFinal = -1;
+            public float ganasDeVivir = 0;
         }
 
-        public class PrePollData : Data {
-            //TODO: Hacer la encuesta previa
+        public class QuestionarieData : Data {
+            public List<int> questions = new List<int>();
         }
-
-        public class PostPollData : Data {
-            //TODO: Hacer la encuesta posterior
-        }
-
     }
 
     // Each class creates its own dictionary with its properties.

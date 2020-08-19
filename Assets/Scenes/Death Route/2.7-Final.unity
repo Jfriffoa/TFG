@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplesScenes: 0
-  sceneName: 0.0-MainMenu
+  sceneName: x.MFQ
   scenes: []
 --- !u!114 &51837602
 MonoBehaviour:
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplesScenes: 0
-  sceneName: 0.0-MainMenu
+  sceneName: x.MFQ
   scenes: []
 --- !u!114 &177672272
 MonoBehaviour:
