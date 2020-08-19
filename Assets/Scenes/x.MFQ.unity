@@ -380,7 +380,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 2. Si a alguien se le trata/o no se le trata de manera diferente a otras
+      value: 2. Si a alguien se le trata (o no) de manera diferente a otras personas
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -2914,7 +2914,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 4. Si alguien muestra/o no muestra falta de respeto hacia la autoridad
+      value: 4. Si alguien muestra (o no) falta de respeto hacia la autoridad
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -4403,7 +4403,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: "3. Si la acci\xF3n de alguien muestra/o no muestra amor por su pa\xEDs"
+      value: "3. Si la acci\xF3n de alguien muestra (o no) amor por su pa\xEDs"
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -8329,7 +8329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Parte 1. Cuando tu decides que algo esta bien o mal, \xBFcuan relevantes
+  m_text: "Parte 1. Cuando decides que algo esta bien o mal, \xBFqu\xE9 tan relevantes
     son las siguientes consideraciones para tu juicio?\n\nPor favor califica cada
     frase usando esta escala:\n\n[0] Para nada relevante\n[1] No muy relevante\n[2]
     Levemente relevante\n[3] Algo muy relevante\n[4] Muy relevante\n[5] Extremadamente
@@ -8970,6 +8970,7 @@ GameObject:
   - component: {fileID: 926020481}
   - component: {fileID: 926020483}
   - component: {fileID: 926020482}
+  - component: {fileID: 926020484}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9119,6 +9120,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926020480}
   m_CullTransparentMesh: 0
+--- !u!114 &926020484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926020480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8d3018f7d70314c8babe6ae3843317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart: 1
+  delay: 0
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2086871143}
+        m_MethodName: SaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &927825285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9154,7 +9183,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: "7. Si alguien se preocupa/o no se preocupa por el d\xE9bil y vulnerable"
+      value: "7. Si alguien se preocupa (o no) por el d\xE9bil y vulnerable"
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -10723,7 +10752,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: "5. Si alguien viola/o no viola los est\xE1ndares de pureza y decencia"
+      value: "5. Si alguien viola (o no) los est\xE1ndares de pureza y decencia"
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -11237,7 +11266,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: "16. Si alguien act\xFAa/o no act\xFAa de acuerdo con lo que Dios se\xF1ala
+      value: "16. Si alguien act\xFAa (o no) de acuerdo con lo que Dios se\xF1ala
         o aprobar\xEDa"
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
@@ -12127,7 +12156,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: "8. Si alguien act\xFAa/o no act\xFAa injustamente"
+      value: "8. Si alguien act\xFAa (o no) injustamente"
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -13968,7 +13997,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 12. Si alguien es/o no es cruel
+      value: 12. Si alguien es (o no) cruel
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -14610,7 +14639,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 11. Si alguien hace/o no hace algo desagradable
+      value: 11. Si alguien hace (o no) algo desagradable
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -17418,7 +17447,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 10. Si alguien se ajusta/o no se ajusta a las tradiciones de la sociedad
+      value: 10. Si alguien se ajusta (o no) a las tradiciones de la sociedad
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -18710,7 +18739,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 13. Si alguien se le niegan/o no se le niegan sus derechos
+      value: 13. Si alguien se le niegan (o no) sus derechos
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -20204,7 +20233,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 9. Si alguien hace algo/o no hace algo que traiciona a su grupo.
+      value: 9. Si alguien hace algo (o no) que traiciona a su grupo.
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -21619,7 +21648,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: "6. Si alguien es/o no es bueno en matem\xE1ticas"
+      value: "6. Si alguien es (o no) bueno en matem\xE1ticas"
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -22059,7 +22088,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: "15. Si una acci\xF3n causa/o no causa caos o desorden"
+      value: "15. Si una acci\xF3n causa (o no) caos o desorden"
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -22499,7 +22528,7 @@ PrefabInstance:
     - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_text
-      value: 14. Si alguien muetra/o no muetras una falta de lealtad
+      value: 14. Si alguien muestra (o no) una falta de lealtad
       objectReference: {fileID: 0}
     - target: {fileID: 6605690094592565985, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
@@ -22976,6 +23005,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1701175070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701175072}
+  - component: {fileID: 1701175071}
+  m_Layer: 0
+  m_Name: Firebase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1701175071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701175070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a131d67c6892da4b9a8127dd0ce7aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1701175072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701175070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1704746003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24636,7 +24708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Parte 1. Cuando tu decides que algo esta bien o mal, \xBFcuan relevantes
+  m_text: "Parte 1. Cuando decides que algo esta bien o mal, \xBFqu\xE9 tan relevantes
     son las siguientes consideraciones para tu juicio?\n\nPor favor califica cada
     frase usando esta escala:\n\n[0] Para nada relevante\n[1] No muy relevante\n[2]
     Levemente relevante\n[3] Algo muy relevante\n[4] Muy relevante\n[5] Extremadamente
@@ -25616,6 +25688,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1506518076}
     m_Modifications:
+    - target: {fileID: 4259849206456464680, guid: 2478cefced32f8d4c836771e93680300,
+        type: 3}
+      propertyPath: m_text
+      value: 1. Si alguien sufre (o no) emocionalmente
+      objectReference: {fileID: 0}
     - target: {fileID: 6605690094696691979, guid: 2478cefced32f8d4c836771e93680300,
         type: 3}
       propertyPath: m_AnchorMin.y
